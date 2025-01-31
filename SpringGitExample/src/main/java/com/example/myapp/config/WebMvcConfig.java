@@ -13,7 +13,7 @@ import jakarta.servlet.Filter;
 @Configuration
 public class WebMvcConfig implements WebMvcConfigurer {
 
-    @Bean
+    @Bean 
     FilterRegistrationBean<HttpMethodOverrideFilter> httpMethodOverrideFilter() {
         FilterRegistrationBean<HttpMethodOverrideFilter> registrationBean = new FilterRegistrationBean<>();
         registrationBean.setFilter(new HttpMethodOverrideFilter());
